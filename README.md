@@ -36,7 +36,7 @@ All three models were trained and evaluated:
 |-------|-----------|-------------|
 | Logistic Regression | Simple, fast | low fraud recall |
 | Random Forest | Good recall | Slower, lower AUC |
-| XGBoost (FINAL) | High AUC, reliable fraud detection | Slower training |
+| XGBoost (FINAL) | High AUC, reliable fraud detection | None significant |
 
 ---
 
