@@ -111,8 +111,7 @@ page = st.sidebar.radio("Go to", ["Home / Overview", "Single Prediction", "Batch
 if page == "Home / Overview":
     st.title("Credit Card Fraud Detection — Demo")
     st.markdown("""
-    This demo uses your saved model (`model.pkl`) and scaler (`scaler.pkl`).\
-    \n**Important:** Ensure `model.pkl` and `scaler.pkl` exist in the same directory as this app.\
+    This demo uses saved model (`model.pkl`) and scaler (`scaler.pkl`).\
     """)
 
     col1, col2 = st.columns([2,3])
@@ -132,9 +131,9 @@ if page == "Home / Overview":
     st.subheader("About this project")
     st.markdown(
         """
-        - Dataset: Credit Card Fraud (PCA features V1..V28, Time, Amount)\
-        - Models tried: Logistic Regression (baseline), Random Forest, XGBoost (final)\
-        - Recommended final model: XGBoost (highest ROC-AUC / best recall)\
+        - Dataset: Credit Card Fraud (PCA features V1..V28, Time, Amount)\n
+        - Models tried: Logistic Regression (baseline), Random Forest, XGBoost (final)\n
+        - Recommended final model: XGBoost (highest ROC-AUC / best recall)\n
         - This app performs scaling using the shipped scaler and inference using the shipped model.
         """
     )
